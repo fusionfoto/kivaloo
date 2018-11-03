@@ -1,0 +1,13 @@
+PROG=	test_json_find
+SRCS=	main.c
+MAN1=
+
+# Utility functions
+.PATH.c	:	../../libcperciva/util
+SRCS	+=	json.c
+IDIRS	+=	-I ../../libcperciva/util
+
+test:	all
+	@./test_json_find
+
+.include <bsd.prog.mk>
