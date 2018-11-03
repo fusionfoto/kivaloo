@@ -67,7 +67,7 @@ netbuf_read.o: ../../lib/netbuf/netbuf_read.c ../../libcperciva/events/events.h 
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/netbuf/netbuf_read.c -o netbuf_read.o
 netbuf_write.o: ../../lib/netbuf/netbuf_write.c ../../libcperciva/network/network.h ../../libcperciva/util/warnp.h ../../lib/netbuf/netbuf.h
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/netbuf/netbuf_write.c -o netbuf_write.o
-wire_packet.o: ../../lib/wire/wire_packet.c ../../libcperciva/datastruct/mpool.h ../../lib/wire/wire.h ../../lib/netbuf/netbuf.h
+wire_packet.o: ../../lib/wire/wire_packet.c ../../libcperciva/datastruct/mpool.h ../../lib/wire/wire.h
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/wire/wire_packet.c -o wire_packet.o
 wire_readpacket.o: ../../lib/wire/wire_readpacket.c ../../libcperciva/alg/crc32c.h ../../libcperciva/events/events.h ../../libcperciva/datastruct/mpool.h ../../lib/netbuf/netbuf.h ../../libcperciva/util/sysendian.h ../../libcperciva/util/warnp.h ../../lib/wire/wire.h
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/wire/wire_readpacket.c -o wire_readpacket.o
@@ -75,5 +75,5 @@ wire_writepacket.o: ../../lib/wire/wire_writepacket.c ../../libcperciva/alg/crc3
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/wire/wire_writepacket.c -o wire_writepacket.o
 wire_requestqueue.o: ../../lib/wire/wire_requestqueue.c ../../libcperciva/events/events.h ../../libcperciva/datastruct/mpool.h ../../lib/netbuf/netbuf.h ../../libcperciva/datastruct/seqptrmap.h ../../libcperciva/util/warnp.h ../../lib/wire/wire.h
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/wire/wire_requestqueue.c -o wire_requestqueue.o
-proto_kvlds_client.o: ../../lib/proto_kvlds/proto_kvlds_client.c ../../libcperciva/events/events.h ../../libcperciva/util/imalloc.h ../../libcperciva/datastruct/mpool.h ../../libcperciva/util/sysendian.h ../../libcperciva/util/warnp.h ../../lib/wire/wire.h ../../lib/netbuf/netbuf.h ../../lib/proto_kvlds/proto_kvlds.h ../../lib/datastruct/kvldskey.h ../../libcperciva/util/ctassert.h
+proto_kvlds_client.o: ../../lib/proto_kvlds/proto_kvlds_client.c ../../libcperciva/events/events.h ../../libcperciva/util/imalloc.h ../../libcperciva/datastruct/mpool.h ../../libcperciva/util/sysendian.h ../../libcperciva/util/warnp.h ../../lib/wire/wire.h ../../lib/proto_kvlds/proto_kvlds.h ../../lib/datastruct/kvldskey.h ../../libcperciva/util/ctassert.h ../../lib/netbuf/netbuf.h
 	${CC} ${CFLAGS} ${CFLAGS_POSIX} -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700  -I.. ${IDIRS} -c ../../lib/proto_kvlds/proto_kvlds_client.c -o proto_kvlds_client.o
