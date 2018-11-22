@@ -1,8 +1,9 @@
 .POSIX:
 
 PKG=	kivaloo
-PROGS=	lbs kvlds mux s3 lbs-s3 dynamodb-kv
+PROGS=	lbs kvlds mux s3 lbs-s3 dynamodb-kv lbs-dynamodb
 TESTS=	tests/lbs tests/kvlds tests/mux tests/s3 tests/kvlds-s3 \
+	tests/kvlds-ddbkv \
 	perftests/kvldsperf perftests/kvldsclean perftests/http \
 	perftests/s3 perftests/s3_put perftests/dynamodb_sign \
 	perftests/dynamodb perftests/serverpool \
